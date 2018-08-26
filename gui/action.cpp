@@ -212,6 +212,8 @@ GUIAction::GUIAction(xml_node<>* node)
 		ADD_ACTION(nandroid);
 		ADD_ACTION(fixcontexts);
 		ADD_ACTION(resetlockscreen);
+		ADD_ACTION(torch);
+		ADD_ACTION(torch2);
 		ADD_ACTION(xposed);
 		ADD_ACTION(fixpermissions);
 		ADD_ACTION(dd);
@@ -1294,6 +1296,44 @@ int GUIAction::resetlockscreen(std::string arg __unused)
 	       LOGINFO("reset lockscreen: Removing lockscreen password/pattern... Failed:  result=%d\n", op_status);
 	else
 	       LOGINFO("reset lockscreen: Removing lockscreen password/pattern... Success: result=%d\n", op_status);
+	return op_status;
+}
+
+int GUIAction::torch(std::string arg __unused)
+{
+	int op_status = 0;
+
+	operation_start("torch");
+	if (simulate) {
+		simulate_progress_bar();
+	} else {
+		string cmd = "echo 1 > /sys/class/leds/led:torch_1/brightness && echo 1 > /sys/class/leds/led:switch_0/brightness";
+		op_status = TWFunc::Exec_Cmd(cmd);
+	}
+	operation_end(op_status);
+	if (op_status != 0)
+	       LOGINFO("torch: Removing in/pattern... Failed:  result=%d\n", op_status);
+	else
+	       LOGINFO("torch: Removing in/pattern... Success: result=%d\n", op_status);
+	return op_status;
+}
+
+int GUIAction::torch2(std::string arg __unused)
+{
+	int op_status = 0;
+
+	operation_start("torch2");
+	if (simulate) {
+		simulate_progress_bar();
+	} else {
+		string cmd = "echo 0 > /sys/class/leds/led:torch_1/brightness && echo 0 > /sys/class/leds/led:switch_0/brightness";
+		op_status = TWFunc::Exec_Cmd(cmd);
+	}
+	operation_end(op_status);
+	if (op_status != 0)
+	       LOGINFO("torch2: Removing in/pattern... Failed:  result=%d\n", op_status);
+	else
+	       LOGINFO("torch2: Removing in/pattern... Success: result=%d\n", op_status);
 	return op_status;
 }
 

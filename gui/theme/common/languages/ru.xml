@@ -11,13 +11,24 @@
 		<resource name="font_s" type="fontoverride" filename="RobotoCondensed-Regular.ttf" scale="90" />
 		<resource name="fixed" type="fontoverride" filename="DroidSansMono.ttf" scale="100" />
 		<!-- Reset Lockscreen function strings -->
-		<string name="reset_lockscreen_btn">Сброс блокировки экрана</string>
+		<string name="reset_lockscreen_btn">Сброс паролей</string>
 		<string name="reset_lockscreen_hdr">Сброс блокировки экрана</string>
 		<string name="reset_lockscreen_note1">Если вы не можете разблокировать экран</string>
 		<string name="reset_lockscreen_note2">после восстановления, сделайте следующее.</string>
 		<string name="swipe_to_reset_lockscreen">Свайп для сброса</string>
 		<string name="resetting_lockscreen">Сброс блокировки экрана...</string>
 		<string name="reset_lockscreen_complete">Сброс блокировки экрана завершен</string>
+		<string name="torch_btn">Фонарь</string>
+		<string name="torch_hdr">Фонарь > Вкл-Выкл</string>
+		<string name="ontorch_btn">Включить</string>
+		<string name="offtorch_btn">Выключить</string>
+		<string name="torch_note1">Ативация фонаря</string>
+		<string name="torch_note2">Да будет свет!</string>
+		<string name="swipe_to_torch">Свайп для выполнения</string>
+		<string name="run_torch">Выполнение...</string>
+		<string name="run_torch_complete">Действие выполнено</string>
+		<string name="torch2_note1">Деактивация фонаря</string>
+		<string name="torch2_note2">Да будет тьма!</string>
 
                 <!-- v.3.0.3-0 new TWRP App install strings -->
                 <string name="reboot_install_app_hdr">Установить TWRP приложение?</string>
@@ -29,10 +40,10 @@
 		<string name="swipe_to_install_app">Свайп для установки</string>
 
                 <!-- v.3.1.1-3 Xposed functions strings -->
-                <string name="advanced2_btn">More...</string>
+                <string name="advanced2_btn">Еще...</string>
 	        <string name="xposed_dis_btn">Disable Xposed</string>
 	        <string name="xposed_en_btn">Enable Xposed</string>
-	        <string name="more_hdr">Advanced > More</string>
+	        <string name="more_hdr">Дополнительно > Еще</string>
 	        <string name="xposed_dis_note1">If you experience bootloop after Xposed Framework</string>
 	        <string name="xposed_dis_note2">or Module install you should do this.</string>
 	        <string name="xposed_en_note1">Is your Xposed Framework or Module</string>

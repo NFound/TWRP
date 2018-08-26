@@ -25,6 +25,17 @@
 		<string name="xposed_dis_complete">Xposed Disabled</string>
 		<string name="xposed_en">Enabling Xposed...</string>
 		<string name="xposed_en_complete">Xposed Enabled</string>
+		<string name="torch_btn">Torch</string>
+		<string name="torch_hdr">Torch > On-Off</string>
+		<string name="ontorch_btn">On</string>
+		<string name="offtorch_btn">Off</string>
+		<string name="torch_note1">On</string>
+		<string name="torch_note2">On</string>
+		<string name="swipe_to_torch">Swipe to torch</string>
+		<string name="run_torch">torch...</string>
+		<string name="run_torch_complete">Torch Complete</string>
+		<string name="torch2_note1">Off</string>
+		<string name="torch2_note2">Off</string>
 
 		<!-- Partition display names -->
 		<string name="system">System</string>

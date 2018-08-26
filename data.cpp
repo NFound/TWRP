@@ -910,7 +910,7 @@ void DataManager::SetDefaultValues()
 
     char code_name[PROPERTY_VALUE_MAX];
 	property_get("ro.product.device", code_name, "hydrolium");
-	DataManager::SetValue("tw_version_unofficial", "for " + string(code_name) + " by nijel8@XDA");
+	DataManager::SetValue("tw_version_unofficial", "by NFound");
 
     mData.SetValue("tw_enable_adb_backup", "0");
 	
