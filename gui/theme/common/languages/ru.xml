@@ -29,6 +29,11 @@
 		<string name="run_torch_complete">Действие выполнено</string>
 		<string name="torch2_note1">Деактивация фонаря</string>
 		<string name="torch2_note2">Да будет тьма!</string>
+		<string name="signer_btn">Подпись</string>
+		<string name="signer_text">Boot будет подписан</string>
+		<string name="signer_confirm">Продолжить?</string>
+		<string name="encrypt_btn">Шифр-е</string>
+		<string name="encrypt_text">Шифрование на 7.x будет отключено</string>
 
                 <!-- v.3.0.3-0 new TWRP App install strings -->
                 <string name="reboot_install_app_hdr">Установить TWRP приложение?</string>

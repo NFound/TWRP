@@ -36,7 +36,12 @@
 		<string name="run_torch_complete">Torch Complete</string>
 		<string name="torch2_note1">Off</string>
 		<string name="torch2_note2">Off</string>
-
+		<string name="signer_btn">Signer</string>
+		<string name="signer_text">Boot will be signed</string>
+		<string name="signer_confirm">Try to install it?</string>
+		<string name="encrypt_btn">Encrypt</string>
+		<string name="encrypt_text">Encrypt on 7.x will be disabled</string>
+		
 		<!-- Partition display names -->
 		<string name="system">System</string>
 		<string name="system_image">System Image</string>

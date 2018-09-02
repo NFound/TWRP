@@ -2828,6 +2828,40 @@
 			</button>
 
 			<button style="main_button">
+				<placement x="%indent%" y="%row13a_y%"/>
+				<text>{@signer_btn=Signer}</text>
+				<actions>
+					<action function="set">tw_back=reboot</action>
+					<action function="set">tw_filename=/addons/signer.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip</action>
+					<action function="set">tw_text1={@signer_text=Boot will be signed.}</action>
+					<action function="set">tw_text2={@signer_confirm=Try to install it?}</action>
+										<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+					<action function="page">action_page</action>
+				</actions>
+			</button>
+
+			<button style="main_button">
+				<placement x="%center_x%" y="%row13a_y%"/>
+				<text>{@encrypt_btn=Encrypt}</text>
+				<actions>
+					<action function="set">tw_back=reboot</action>
+					<action function="set">tw_filename=/addons/encrypt.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip</action>
+					<action function="set">tw_text1={@encrypt_text=Encrypt on 7.x will be disabled.}</action>
+					<action function="set">tw_text2={@signer_confirm=Try to install it?}</action>
+										<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+					<action function="page">action_page</action>
+				</actions>
+			</button>
+
+			<button style="main_button">
 				<condition var1="tw_download_mode" var2="1"/>
 				<placement x="%indent%" y="%row13a_y%"/>
 				<text>{@rb_download_btn=Download}</text>
