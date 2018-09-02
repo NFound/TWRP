@@ -23,6 +23,7 @@
 		<font name="keylabel-small" filename="RobotoCondensed-Regular.ttf" size="46"/>
 		<font name="keylabel-longpress" filename="RobotoCondensed-Regular.ttf" size="32"/>
 
+		<image name="bg_img" filename="background" retainaspect="1"/>
 		<image name="logo" filename="logo" retainaspect="1"/>
 		<image name="main_button" filename="main_button"/>
 		<image name="main_button_half_height" filename="main_button_half_height"/>
@@ -236,6 +237,11 @@
 	<templates>
 		<template name="page">
 			<background color="%background_color%"/>
+
+			<image>
+				<image resource="bg_img"/>
+				<placement x="0" y="0"/>
+			</image>
 
 			<fill color="%accent_color%">
 				<placement x="0" y="0" w="%screen_width%" h="%header_height%"/>
